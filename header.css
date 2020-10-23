@@ -1,0 +1,63 @@
+header {
+	min-height: 100px;
+	background-color: #D6D6D6;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+}
+
+nav {
+	float: right;
+}
+
+/* removes default list style*/
+ol,ul {
+	list-style: none;
+}
+
+/* width and margins of the menu.
+setting the width prevents the menu from wrapping when the user shrinks the browser window */
+
+#menu {
+  margin: 10px;
+  width: 900px;
+  font-family: arial;
+}
+
+/* set the list as blocks, give them width and float them to
+the left so they'll each display to the right of the preciding item */
+
+#menu li{
+  display: block;
+  width: 100px;
+  float: left;
+  margin-left: 100px;
+  /*border: 2px solid #fbccd3;*/
+}
+
+/*change a elements to block elements.
+We'll also add som formatting styles and remove the underline with text-decoration: none*/
+
+#menu a {
+	display:block;
+	padding:3px;
+	text-decoration:none;
+	/*background-color:#fff;*/
+	color: #4f4f51;
+	font-size: 30px;
+}
+
+/* change the hover state of the links so that they highlight when a user points to them*/
+
+#menu a:hover {
+  background-color:#fbccd3;
+  color: white;
+}
+
+#logo {
+	float: left;
+	flex-shrink: 0;
+	margin: auto;
+}
